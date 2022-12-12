@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ProjecteCafeteria</string>
+    <string name="text_usuari">Usuari</string>
+    <string name="text_contrasenya">Contrasenya</string>
+    <string name="text_boto_login">Iniciar Sessio</string>
+    <string name="text_boto_register">Registrarse</string>
+    <string name="text_correu">Correu</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_titul_inici">Cafeteria Maquina Cafe</string>
+    <string name="text_iniciar_comanda">Iniciar Comanda</string>
+    <string name="text_confirma_primers_plats">Confirma</string>
+    <string name="boto_confirma">Confirma</string>
+    <string name="text_primers_plats">Primers Plats</string>
+    <string name="text_segons_plats">Segons Plats</string>
+    <string name="text_postres">Postres</string>
+    <string name="boto_pagar">Pagar</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/iniciFragment">
+
+    <fragment
+        android:id="@+id/iniciFragment"
+        android:name="com.example.projectecafeteria.vista.fragments.inici.IniciFragment"
+        android:label="fragment_inici"
+        tools:layout="@layout/fragment_inici" >
+        <action
+            android:id="@+id/action_iniciFragment_to_primerPlatFragment"
+            app:destination="@id/primerPlatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/primerPlatFragment"
+        android:name="com.example.projectecafeteria.vista.fragments.primerPlat.PrimerPlatFragment"
+        android:label="fragment_primer_plat"
+        tools:layout="@layout/fragment_primer_plat" >
+        <action
+            android:id="@+id/action_primerPlatFragment_to_segonPlatFragment"
+            app:destination="@id/segonPlatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postresFragment"
+        android:name="com.example.projectecafeteria.vista.fragments.postres.PostresFragment"
+        android:label="fragment_postres"
+        tools:layout="@layout/fragment_postres" >
+        <action
+            android:id="@+id/action_postresFragment_to_pagarComandaFragment"
+            app:destination="@id/pagarComandaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segonPlatFragment"
+        android:name="com.example.projectecafeteria.vista.fragments.segonPlat.SegonPlatFragment"
+        android:label="fragment_segon_plat"
+        tools:layout="@layout/fragment_segon_plat" >
+        <action
+            android:id="@+id/action_segonPlatFragment_to_postresFragment"
+            app:destination="@id/postresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagarComandaFragment"
+        android:name="com.example.projectecafeteria.vista.fragments.pagarComanda.PagarComandaFragment"
+        android:label="PagarComandaFragment"
+        tools:layout="@layout/fragment_pagar_comanda"/>
+</navigation>
