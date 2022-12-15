@@ -10,4 +10,7 @@ class SharedViewModel: ViewModel() {
     val segonPlat = MutableLiveData<Plats>();
     val postres = MutableLiveData<Plats>();
 
+
+
+
 }

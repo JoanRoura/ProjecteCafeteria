@@ -10,9 +10,14 @@ class SegonsPlatsViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
     val binding = ItemRecyclerBinding.bind(view)
 
-    fun render(segonsPlats: Plats) {
+    fun render(segonsPlats: Plats, onClickListener:(Plats) -> Unit) {
         binding.nomPlat.text = segonsPlats.nom;
         binding.preuPlat.text = segonsPlats.preu;
         Glide.with(binding.imatgePlat.context).load(segonsPlats.foto).into(binding.imatgePlat)
+
+        itemView.setOnClickListener {
+            onClickListener(segonsPlats)
+        }
+
     }
 }
